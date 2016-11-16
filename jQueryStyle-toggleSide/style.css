@@ -1,0 +1,64 @@
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header {
+  height: 4vh;
+  width: 100vw;
+  padding: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgb(77, 92, 136);
+  overflow: hidden;
+}
+
+i {
+  font-size: 3rem;
+  color: white;
+  cursor: pointer;
+}
+.logo span{
+  font-size: 3rem;
+  font-family: 'Lato';
+  color: white;
+  margin-left: 2rem;
+}
+#menu-toggle i {
+  font-size: 3.5rem;
+  margin-right: 1.25em;
+}
+nav ul{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: #333;
+  padding-right: 4rem;
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+}
+nav ul li {
+  line-height: 2rem;
+  margin: 1em;
+  cursor: pointer;
+}
+nav ul li:hover {
+  border-bottom: solid 1.5px rgb(89, 81, 120);
+}
+.sidebar {
+  position: absolute;
+  width: 100vw;
+  padding: 2em;
+  background: rgba(223, 231, 229, 0.72);
+  color: #333;
+  left: 0;
+  top: 8.75vh;
+  transition: left 500ms;
+  overflow: hidden;
+}
+.sidebar.hidden-left {
+  left: 110vw;
+}
